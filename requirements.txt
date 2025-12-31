@@ -1,0 +1,12 @@
+cryptography>=41.0.0
+pycryptodome>=3.19.0
+ecdsa>=0.18.0
+base58>=2.1.0
+aiohttp>=3.9.0
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+Pillow>=10.0.0
+# Heavy computation packages (for GPU/CPU intensive mode)
+# Note: pysha3 not needed - Python 3.6+ has built-in hashlib.sha3_256
+
