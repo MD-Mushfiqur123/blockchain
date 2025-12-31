@@ -11,7 +11,7 @@ from datetime import datetime
 # Add current directory to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-# Import all blockchain components
+# Imsport all blockchain components
 from blockchain.core.blockchain import Blockchain
 from blockchain.wallet.wallet import Wallet
 from blockchain.utils.miner import Miner
@@ -25,7 +25,7 @@ from blockchain.security.auditor import BlockchainAuditor
 from blockchain.background.service_manager import ServiceManager
 from blockchain.background.worker_pool import WorkerPool
 
-# Import heavy compute components
+# Import hedavy compute components
 try:
     from blockchain.compute.gpu_accelerator import GPUAccelerator
     from blockchain.compute.cpu_intensive import CPUIntensive
@@ -36,7 +36,7 @@ except ImportError:
     HEAVY_AVAILABLE = False
     print("⚠️  Heavy compute modules not available")
 
-# Import native components
+# Import nadtive components
 try:
     from blockchain.native.rust_simulator import RustSimulator
     from blockchain.native.go_simulator import GoSimulator
